@@ -1,0 +1,13 @@
+h1 {
+  text-align: center;
+}
+
+.container {
+  margin-top: 5rem;
+}
+
+.list-group {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px 0px;
+}

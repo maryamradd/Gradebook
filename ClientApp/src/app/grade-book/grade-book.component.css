@@ -1,0 +1,44 @@
+h1 {
+  text-align: center;
+}
+
+.container {
+  margin-top: 5rem;
+}
+
+table {
+  width: 100%;
+}
+
+.table-container {
+  position: relative;
+  overflow: auto;
+}
+
+.example-loading-shade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 56px;
+  right: 0;
+  background: rgba(0, 0, 0, 0.15);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mat-flat-button {
+  float: right;
+  margin: 8px 0px;
+}
+
+.mat-header-cell {
+  font-size: 1rem;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.mat-cell {
+  vertical-align: middle;
+}
