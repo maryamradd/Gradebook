@@ -1,0 +1,17 @@
+<ng-container *ngIf="studentGrade">
+  <div class="container">
+    <h1>{{ studentGrade.name }}</h1>
+    <ul class="list-group">
+      <li class="list-group-item">
+        <strong>Student number: </strong>{{ studentGrade.studentNumber }}
+      </li>
+      <li class="list-group-item">
+        <strong>Student Section: </strong>{{ studentGrade.section }}
+      </li>
+      <li class="list-group-item">
+        <strong>Student grade: </strong>{{ studentGrade.grade }}
+      </li>
+    </ul>
+  </div>
+</ng-container>
+<ng-template #loading>Loading…</ng-template>

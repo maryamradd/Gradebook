@@ -1,0 +1,50 @@
+<div class="container">
+  <h1>{{ actionType }} student record</h1>
+  <form [formGroup]="form" (ngSubmit)="save()" #formDir="ngForm" novalidate>
+    <div class="form-group row">
+      <label class="control-label col-md-12">Student number:</label>
+      <div class="col-md-12">
+        <input
+          class="form-control"
+          type="text"
+          formControlName="studentNumber"
+          required
+        />
+      </div>
+      <span class="text-danger ml-3" *ngIf="studentNumber.invalid">
+        Student number is required.
+      </span>
+    </div>
+    <div class="form-group row">
+      <label class="control-label col-md-12">Name</label>
+      <div class="col-md-12">
+        <input class="form-control" type="text" formControlName="name" />
+      </div>
+      <span class="text-danger ml-3" *ngIf="name.invalid">
+        Name is required.
+      </span>
+    </div>
+    <div class="form-group row">
+      <label class="control-label col-md-12">Section</label>
+      <div class="col-md-12">
+        <input class="form-control" type="text" formControlName="section" />
+      </div>
+      <span class="text-danger ml-3" *ngIf="section.invalid">
+        Section is required.
+      </span>
+    </div>
+    <div class="form-group row">
+      <label class="control-label col-md-12">grade</label>
+      <div class="col-md-12">
+        <input class="form-control" type="text" formControlName="grade" />
+      </div>
+      <span class="text-danger ml-3" *ngIf="grade.invalid">
+        Grade is required.
+      </span>
+    </div>
+    <div class="btn-group">
+      <button mat-flat-button (click)="cancel()">Cancel</button>
+      <button mat-flat-button type="submit" color="primary">Save</button>
+    </div>
+  </form>
+</div>
